@@ -1,0 +1,44 @@
+{% extends './base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+
+{% block body%} 
+    <h1>Bienvenido</h1>
+    <h3>Mi tienda</h3>
+    <section>
+        <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Jabon</h5>
+              <p class="card-text">$2</p>
+              <a href="{{url_for('dashboard')}}" class="btn btn-primary">Añadir</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Shampo</h5>
+              <p class="card-text">$5</p>
+              <a href="{{url_for('dashboard')}}"  class="btn btn-primary">Añadir</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Crema</h5>
+              <p class="card-text">$7</p>
+              <a href="{{url_for('dashboard')}}"  class="btn btn-primary">Añadir</a>
+            </div>
+          </div>
+    </section>
+{% endblock %}
+
